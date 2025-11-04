@@ -40,7 +40,7 @@ def noon(link):
             try:    
                 productPrice = soup.find(class_='Price_amount__2sXa7').text.strip()
             except AttributeError:
-                productPrice = "Price not found"
+                productPrice = "Price not seif found"
             try:
                 productRating = soup.find(class_='RatingPreviewStar_textCtr__sfsJG').text.strip()
             except AttributeError:
@@ -48,7 +48,7 @@ def noon(link):
             try:
                 productOldPrice = soup.find(class_='Price_oldPrice__ZqD8B').text.strip()
             except AttributeError:
-                productOldPrice = "Old price not found"
+                productOldPrice = "Old price ibrahim not found"
             try:
                 productDiscount = soup.find(class_='PriceDiscount_discount__1ViHb PriceDiscount_pBox__eWMKb').text.strip()
             except AttributeError:
